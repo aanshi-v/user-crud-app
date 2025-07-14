@@ -32,7 +32,7 @@ This is a simple Spring Boot REST API for managing users using:
 
 ## ⚙️ Technologies Used
 
-- Java 17+
+- Java 21
 - Spring Boot 3.x
 - Spring Data JPA
 - Hibernate

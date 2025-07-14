@@ -1,0 +1,70 @@
+
+1) method queries for multiple propertie
+2) try OrderBy desc, asc, contains
+3) pagination
+4) custom query
+
+_____________________________________________________________________________
+
+
+
+Post:   localhost:8080/api/users
+Request:
+{
+  "firstName": "xyz",
+  "lastName": "abc",
+  "email": "xyz.abc@gmail.com"
+}
+
+
+Get:   localhost:8080/api/users/1
+
+Get:   localhost:8080/api/users
+
+Get:   localhost:8080/api/users/paginated?page=0&size=2
+
+Get:   localhost:8080/api/users/paginatedList?page=0&size=3
+
+Get:   localhost:8080/api/users/custom?fn=xyz&ln=abc
+
+Put:   localhost:8080/api/users/1
+Request:
+{
+  "firstName": "John",
+  "lastName": "D",
+  "email": "john.d@gmail.com"
+}
+
+Delete:   localhost:8080/api/users/3
+
+
+Get:   localhost:8080/api/users/by-first-last-name?firstName=John
+
+Get:   localhost:8080/api/users/by-first-name2?firstName=John
+
+Get:   localhost:8080/api/users/by-first-name-contains?keyword=jo
+
+Get:   localhost:8080/api/users/by-first-name-asc?keyword=jo
+
+Get:   localhost:8080/api/users/by-first-last-name?firstName=John&lastName=D
+
+Get:   localhost:8080/api/users/by-first-or-last-name?firstName=Jane&lastName=D
+
+Get:   localhost:8080/api/users/by-name-contains?firstName=jo&lastName=do
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
